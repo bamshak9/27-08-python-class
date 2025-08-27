@@ -6,9 +6,9 @@ while running:
     if name.capitalize()== "Exit":
         running = False
     elif name.capitalize() in scores.keys():
-        score=input("Enter the student's score: ")
+        score=int(input("Enter the student's score: "))
         scores[name.capitalize()].append(score)
     else:
-        score=input("Enter the student's score: ")
+        score=int(input("Enter the student's score: "))
         scores[name.capitalize()]=[score]
 print(scores)
